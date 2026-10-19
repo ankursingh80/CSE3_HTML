@@ -1,57 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Experiment 3</title>
 </head>
-
 <body>
-    <!-- we give that value in for(label) which we give in id -->
-    <!-- fieldset is used to make box around the objects -->
-    <fieldset>
-        <legend>Bio Data</legend>
-        <form action="./response.html">
-            <lable for="name">Name :</lable>
-            <input type="text" size="20" placeholder="enter your name" name="name" required id="name"><br><br>
-            <label for="passwd">Password :</label><input type="password" name="passwd"
-                placeholder="enter your password"><br><br>
-            <label for="email">Email :</label><input type="email" placeholder="enter your  email" required>
-            <br><br>Gender:
-            <label for="male">Male</label><input type="radio" name="gender" id="male"></input>
-            <label for="female">Female</label><input type="radio" name="gender" id="female"></input><br><br>
-
-            <label for="hobb">Hobbies :</label>
-            <label for="hob1">Cricket</label><input type="checkbox" name="check1">
-            <label for="hob2">Football</label><input type="checkbox" name="check2">
-            <label for="hob3">Badminton</label><input type="checkbox" name="check3"><br><br>
-            Languages:
-            <select>
-                <option value="c">C</option>
-                <option value="Python">Python</option>
-                <option value="Java">Java</option>
-                <option value="C++">C++</option>
-                <option value="javascript">javascript</option>
-            </select>
-            <br><br>D.O.B
-            <input type="date">
-            <br><br>
-            Enter your Url:<input type="URL" name="url" required>
-
-            <br><br>
-            <label for="file">Resume :</label><input type="file" name="file" id="file">
-            <br><br>
-            <label for="attempt">Attempt :</label><input type="attempt" name="attempt" id="attempt">
-
-<!-- required attribute is given when we want any file to be compulsory -->
- <br><br>
- <button>Submit</button>
- <button>Reset</button>
+    <table border="5px" ceellspacing="50" cellspaddin="10">
+        <caption>College Timetable-CSE Department</caption>
+<tr>
+    <th>Day/Time</th>
+    <th>9:00-10:00</th>
+    <th>10:00-11:00</th>
+    <th>11:00-12:00</th>
+    <th>12:00=1:00</th>
+    <th>1:00-2:00</th>
+    <th>2:00-3:00</th>
+    <th colspan="2">3:00-4:00</th>
+</tr>
+<tr>
+    <th>Monday</th>
+    <td rowspan="2">Mathematics</td>
+    <td>English</td>
+    <td rowspan="3">Physics</td>
+    <td>Break</td>
+    <td colspan="2">Computer Lab</td>
+    <td colspan="2">Sports</td>
 
 
-    </fieldset>
-    </form>
+</tr>
+<tr>
+    <th>Tuesday</th>
+    
+    <td>C Programming</td>
+    
+    <td>Break</td>
+    <td colspan="2">Electronics Lab</td>
+    <td colspan="2">Library</td>
+</tr>
+
+<tr>
+<th rowspan="">Wednesday</th>
+<td rowspan>Mathematics</td>
+<td rowspan="2">English</td>
+<td rowspan="1">Break</td>
+<td>Computer Networks</td>
+<td colspan="2">
+    <table border="5">
+        <tr><th colspan="2">Lab Details</th></tr>
+        <tr><td>Batch A</td>
+            <td>DBMS Lab</td>
+        </tr>
+        <tr>
+            <td>Batch B</td>
+            <td>OS Lab</td>
+        </tr>
+    </table>
+</td>
+</tr>
+<tr>
+    <th>Thursday</th>
+    <td colspan="2">Workshop</td>
+    
+    <tD>Physics</tD>
+    <td>Break</td>
+    <td>Mathematics</td>
+    <td>English</td>
+    <td>Seminar</td>
+</tr>
+<tr>
+    <th>Friday</th>
+    <td>Computer Networks</td>
+    <td colspan="">English</td>
+    <td>Physics</td>
+    <td>Break</td>
+    <td colspan="3">Project Work</td>
+</tr>
+
+
+    </table>
 </body>
-
 </html>
